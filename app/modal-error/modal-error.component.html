@@ -1,0 +1,38 @@
+<ActionBar title="Snapbots">
+    <FlexboxLayout alignItems="center" justifyContent="center">
+        <Image src="~/assets/images/logo.png"></Image>
+    </FlexboxLayout>
+</ActionBar>
+<FlexboxLayout backgroundColor="#242424">
+    <AbsoluteLayout class="modal">
+        <FlexboxLayout
+            top="0"
+            left="0"
+            width="100%"
+            height="100%"
+            alignItems="center"
+            justifyContent="center"
+            class="modal-dialog"
+        >
+            <StackLayout class="modal-content">
+                <Image
+                    class="mb-4"
+                    src="~/assets/images/ic-error.png"
+                    width="80"
+                ></Image>
+                <Label
+                    class="title mb-3"
+                    text="NOT SUCCESS"
+                    textAlignment="center"
+                ></Label>
+                <Label
+                    class="text-mute mb-4"
+                    text="The email you entered don't match. Try checking the same email again."
+                    whiteSpace="normal"
+                    textAlignment="center"
+                ></Label>
+                <Button class="btn-primary active" text="TRY AGAIN"></Button>
+            </StackLayout>
+        </FlexboxLayout>
+    </AbsoluteLayout>
+</FlexboxLayout>

@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<ActionBar title="Snapbots">
+    <FlexboxLayout alignItems="center" justifyContent="center">
+        <Image src="~/assets/images/logo.png"></Image>
+    </FlexboxLayout>
+</ActionBar>
+<StackLayout class="p-20">
+    <Button [nsRouterLink]="['/login']" text="login"></Button>
+    <Button [nsRouterLink]="['/verify-code']" text="verify-code"></Button>
+    <Button [nsRouterLink]="['/reset-password']" text="reset-password"></Button>
+    <Button [nsRouterLink]="['/modal-success']" text="modal-success"></Button>
+    <Button [nsRouterLink]="['/modal-error']" text="modal-error"></Button>
+    <Button [nsRouterLink]="['/create-account']" text="create-account"></Button>
+</StackLayout>

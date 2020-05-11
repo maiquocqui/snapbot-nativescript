@@ -1,0 +1,42 @@
+// @import "~@nativescript/theme/core";
+// @import "~@nativescript/theme/blue";
+
+// Place any CSS rules you want to apply on both iOS and Android here.
+// This is where the vast majority of your CSS code goes.
+
+// Font icon class
+// .fab {
+//     font-family: "Font Awesome 5 Brands", "fa-brands-400";
+//     font-weight: 400;
+// }
+
+// .fas {
+//     font-family: "Font Awesome 5 Free", "fa-solid-900";
+//     font-weight: 900;
+// }
+
+// .far {
+//     font-family: "Font Awesome 5 Free", "fa-regular-400";
+//     font-weight: 400;
+// }
+
+@import './assets/styles/main';
+
+// @font-face {
+//     font-family: 'FontAwesome';
+//     src: url('./assets/fonts/fontawesome-webfont.eot?v=4.7.0');
+//     src: url('./assets/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0')
+//             format('embedded-opentype'),
+//         url('./assets/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+//         url('./assets/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+//         url('./assets/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+//         url('./assets/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular')
+//             format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+.fa {
+    font-family: 'FontAwesome';
+}
+

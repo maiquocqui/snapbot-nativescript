@@ -1,0 +1,40 @@
+<ActionBar title="Snapbots">
+    <FlexboxLayout alignItems="center" justifyContent="center">
+        <Image src="~/assets/images/logo.png"></Image>
+    </FlexboxLayout>
+</ActionBar>
+<FlexboxLayout
+    flexDirection="column"
+    flexWrap="nowrap"
+    justifyContent="space-between"
+    backgroundColor="#242424"
+>
+    <StackLayout class="container reset-page">
+        <Label
+            class="title mb-3"
+            textAlignment="center"
+            text="RESET PASSWORD"
+        ></Label>
+        <Label
+            text="Please enter your email and username. We will send a link to reset your password."
+            whiteSpace="normal"
+            class="text-mute mb-5"
+        ></Label>
+        <StackLayout class="input-code-wrap">
+            <FlexboxLayout alignItems="center" justifyContent="space-between">
+                <TextField class="form-control" width="100%"></TextField>
+            </FlexboxLayout>
+            <label
+                text="Enter the code to verify your account."
+                textAlignment="center"
+                color="#464646"
+                style="margin-top: 15;"
+            ></label>
+        </StackLayout>
+    </StackLayout>
+    <StackLayout class="container">
+        <Button class="btn-primary" text="RESET PASSWORD"></Button>
+        <Button class="btn-link" text="CANCEL" textAlignment="center"></Button>
+    </StackLayout>
+</FlexboxLayout>
+<!-- <Button text="verify-code works!" class="btn btn-primary"></Button> -->

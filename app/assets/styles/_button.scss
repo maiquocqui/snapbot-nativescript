@@ -1,0 +1,27 @@
+.btn {
+    font-size: 16;
+    font-weight: 700;
+    padding: 15 25;
+    border-radius: 1000;
+    android-elevation: 0;
+    android-dynamic-elevation-offset: 0;
+}
+
+.btn-primary {
+    @extend .btn;
+    color: #fff;
+    background-color: #2f0f65;
+    &.active {
+        background-color: #7424fb;
+    }
+}
+
+.btn-link {
+    @extend .btn;
+    font-weight: 400;
+    color: #929292;
+    background-color: transparent;
+    // &.active {
+    //     background: #7424fb;
+    // }
+}

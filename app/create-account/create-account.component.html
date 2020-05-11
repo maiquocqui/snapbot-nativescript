@@ -1,0 +1,78 @@
+<ActionBar title="Snapbots">
+    <FlexboxLayout alignItems="center" justifyContent="center">
+        <Image src="~/assets/images/logo.png"></Image>
+    </FlexboxLayout>
+</ActionBar>
+
+<FlexboxLayout
+    flexDirection="column"
+    flexWrap="nowrap"
+    justifyContent="space-between"
+    backgroundColor="#242424"
+>
+    <StackLayout class="container create-account-page">
+        <Label
+            class="title mb-4"
+            textAlignment="center"
+            text="Create your account"
+            textTransform="uppercase"
+        ></Label>
+        <StackLayout>
+            <FlexboxLayout class="form-group row mb-3">
+                <StackLayout class="col" flexGrow="1">
+                    <TextField
+                        class="form-control"
+                        hint="FIRST NAME"
+                        text=""
+                    ></TextField>
+                </StackLayout>
+                <StackLayout class="col" flexGrow="1">
+                    <TextField
+                        class="form-control"
+                        hint="LAST NAME"
+                        text=""
+                    ></TextField>
+                </StackLayout>
+            </FlexboxLayout>
+            <StackLayout class="form-group mb-3">
+                <TextField
+                    class="form-control"
+                    hint="EMAIL"
+                    text=""
+                ></TextField>
+            </StackLayout>
+            <FlexboxLayout class="form-group row mb-3">
+                <StackLayout class="col" flexGrow="1">
+                    <TextField
+                        class="form-control"
+                        hint="+84"
+                        text=""
+                    ></TextField>
+                </StackLayout>
+                <StackLayout class="col" flexGrow="3">
+                    <TextField
+                        class="form-control"
+                        hint="PHONE NUMBER"
+                        text=""
+                    ></TextField>
+                </StackLayout>
+            </FlexboxLayout>
+        </StackLayout>
+    </StackLayout>
+    <StackLayout class="container">
+        <Button class="btn-primary" text="Verify"></Button>
+        <FlexboxLayout
+            class="mt-4 mb-4"
+            alignItems="center"
+            justifyContent="center"
+        >
+            <Label class="text-mute" text="Already have an account? "></Label>
+            <Label
+                class=""
+                text="Sign in"
+                textAlignment="center"
+                fontWeight="500"
+            ></Label>
+        </FlexboxLayout>
+    </StackLayout>
+</FlexboxLayout>
