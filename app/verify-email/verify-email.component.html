@@ -1,0 +1,44 @@
+<ActionBar title="Snapbots">
+    <FlexboxLayout alignItems="center" justifyContent="center">
+        <Image src="~/assets/images/logo.png"></Image>
+    </FlexboxLayout>
+</ActionBar>
+<FlexboxLayout
+    flexDirection="column"
+    flexWrap="nowrap"
+    justifyContent="space-between"
+    backgroundColor="#242424"
+>
+    <StackLayout class="container verify-page">
+        <Label
+            class="title mb-4"
+            textAlignment="center"
+            text="VERIFY YOUR EMAIL"
+        ></Label>
+        <label
+            text="We have sent an link to your email."
+            textAlignment="center"
+            whiteSpace="normal"
+            class="text-mute"
+        ></label>
+        <label
+            text="Please check your email and click on the link to verify your email."
+            textAlignment="center"
+            whiteSpace="normal"
+            class="text-mute"
+        ></label>
+    </StackLayout>
+    <StackLayout class="container">
+        <FlexboxLayout class="mb-4" alignItems="center" justifyContent="center">
+            <Label class="text-mute" text="Didn't receive an email? Click here to "></Label>
+            <Label class="text-white" text="Resend"></Label>
+        </FlexboxLayout>
+        <Button class="btn-primary" text="Verify"></Button>
+        <Label
+            class="text-mute mt-4 mb-4"
+            text=""
+            textAlignment="center"
+        ></Label>
+    </StackLayout>
+</FlexboxLayout>
+<!-- <Button text="verify-code works!" class="btn btn-primary"></Button> -->

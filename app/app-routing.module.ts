@@ -9,12 +9,16 @@ import { ResetComponent } from './reset/reset.component';
 import { ModalSuccessComponent } from './modal-success/modal-success.component';
 import { ModalErrorComponent } from './modal-error/modal-error.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
+import { VerifyPhoneComponent } from './verify-phone/verify-phone.component';
+import { VerifyEmailComponent } from './verify-email/verify-email.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'verify-code', component: VerifyCodeComponent },
+  { path: 'verify-phone', component: VerifyPhoneComponent },
+  { path: 'verify-email', component: VerifyEmailComponent },
   { path: 'reset-password', component: ResetComponent },
   { path: 'modal-success', component: ModalSuccessComponent },
   { path: 'modal-error', component: ModalErrorComponent },

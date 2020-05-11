@@ -10,6 +10,8 @@ import { ResetComponent } from './reset/reset.component';
 import { ModalSuccessComponent } from './modal-success/modal-success.component';
 import { ModalErrorComponent } from './modal-error/modal-error.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
+import { VerifyPhoneComponent } from './verify-phone/verify-phone.component';
+import { VerifyEmailComponent } from './verify-email/verify-email.component';
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from 'nativescript-angular/forms';
@@ -27,6 +29,8 @@ import { CreateAccountComponent } from './create-account/create-account.componen
     ModalSuccessComponent,
     ModalErrorComponent,
     CreateAccountComponent,
+    VerifyPhoneComponent,
+    VerifyEmailComponent,
   ],
   imports: [
     NativeScriptModule,

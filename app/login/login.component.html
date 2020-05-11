@@ -34,8 +34,11 @@
                     text=""
                     class="form-control"
                 ></TextField>
-                <FlexboxLayout class="checkbox">
-                    <Button class="checkbox-square"></Button>
+                <FlexboxLayout class="checkbox mt-3 mb-3">
+                    <FlexboxLayout class="checkbox-square">
+                        <StackLayout class="checkbox-active" flexGrow="1">
+                        </StackLayout>
+                    </FlexboxLayout>
                     <Label text="Remember me" textWrap="true"></Label>
                 </FlexboxLayout>
                 <Button class="btn-primary" [text]="'Sign in'"></Button>

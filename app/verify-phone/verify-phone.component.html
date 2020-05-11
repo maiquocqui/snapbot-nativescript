@@ -10,11 +10,10 @@
     backgroundColor="#242424"
 >
     <StackLayout class="container verify-page">
-        <Label class="title" textAlignment="center" text="VERIFY YOUR"></Label>
         <Label
             class="title"
             textAlignment="center"
-            text="GOOGLE AUTHENTICATOR CODE"
+            text="VERIFY YOUR PHONE NUMBER"
         ></Label>
         <StackLayout class="input-code-wrap">
             <FlexboxLayout alignItems="center" justifyContent="space-between">
@@ -51,16 +50,27 @@
             </FlexboxLayout>
         </StackLayout>
         <label
+            text="A 6 digit OTP has been sent to your phone number."
+            textAlignment="center"
+            whiteSpace="normal"
+            class="text-mute"
+        ></label>
+        <label
             text="Enter the code to verify your account."
             textAlignment="center"
+            whiteSpace="normal"
             class="text-mute"
         ></label>
     </StackLayout>
     <StackLayout class="container">
+        <FlexboxLayout class="mb-4" alignItems="center" justifyContent="center">
+            <Label class="text-mute" text="Didn't get verify code? "></Label>
+            <Label class="text-white" text="Resend Code"></Label>
+        </FlexboxLayout>
         <Button class="btn-primary" text="Verify"></Button>
         <Label
-            class="mt-4 mb-4"
-            text="Back to Sign in"
+            class="text-mute mt-4 mb-4"
+            text="Skip verification for now"
             textAlignment="center"
         ></Label>
     </StackLayout>

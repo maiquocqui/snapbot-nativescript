@@ -18,28 +18,6 @@
 .login-input + .login-input {
     margin-top: 20;
 }
-.checkbox {
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    padding: 0 25;
-    margin-top: 15;
-    margin-bottom: 20;
-}
-.checkbox-square {
-    width: 14;
-    height: 14;
-    border-width: 1;
-    border-style: solid;
-    border-color: #fff;
-    border-radius: 2;
-    margin-right: 10;
-    opacity: 0.8;
-}
-.checkbox label {
-    color: #fff;
-    opacity: 0.3;
-}
 
 .social-link {
     width: 40;

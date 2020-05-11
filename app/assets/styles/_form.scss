@@ -10,3 +10,29 @@
     background: #393939;
     placeholder-color: rgba(255, 255, 255, 0.2);
 }
+
+.checkbox {
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    padding: 0 25;
+    .checkbox-square {
+        width: 16;
+        height: 16;
+        border-width: 1;
+        border-style: solid;
+        border-color: #fff;
+        border-radius: 2;
+        margin-right: 10;
+    }
+    .checkbox-active {
+        background-color: #fff;
+        margin: 2;
+        opacity: 0;
+    }
+    &.active {
+        .checkbox-active {
+            opacity: 1;
+        }
+    }
+}
