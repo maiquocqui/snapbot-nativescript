@@ -2,8 +2,6 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { NativeScriptModule } from 'nativescript-angular/nativescript.module';
 import { AppRoutingModule } from './app-routing.module';
 
-import { DropDownModule } from "nativescript-drop-down/angular";
-
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
@@ -41,8 +39,7 @@ import { HomePageComponent } from './home-page/home-page.component'
   ],
   imports: [
     NativeScriptModule,
-    AppRoutingModule,
-    DropDownModule
+    AppRoutingModule
   ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA],

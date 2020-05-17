@@ -1,0 +1,16 @@
+/* Add mobile styles for the component here.  */
+.nav {
+    background-color: #7424fb;
+    height: 80;
+    .nav-item {
+        width: 20%;
+        text-align: center;
+        padding: 15 0;
+        Image {
+            width: 30;
+        }
+        Label {
+            font-size: 12;
+        }
+    }
+}

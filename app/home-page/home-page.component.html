@@ -3,7 +3,28 @@
         <Image src="~/assets/images/logo.png"></Image>
     </FlexboxLayout>
 </ActionBar>
-<FlexboxLayout>
-    <TextView hint="" text="home page" editable="true"></TextView>
-    
+<FlexboxLayout
+    backgroundColor="#242424"
+    flexDirection="column"
+    justifyContent="space-between"
+>
+    <StackLayout>
+        <app-banner [options]="{ class: 'mt-2' }"></app-banner>
+        <FlexboxLayout class="total-balance">
+            <FlexboxLayout class="balance-title" alignItems="center">
+                <Label text="Total Balance"></Label>
+                <Label class="fa" text="&#xf06e;"></Label>
+            </FlexboxLayout>
+            <FlexboxLayout class="balance-amount mt-2 mb-1">
+                <TextView
+                    class="balance-number"
+                    text="$ 3,125.00"
+                    [secure]="isSecureBalance"
+                ></TextView>
+                <Label class="fa" text="&#xf029;" top="10" left="100%"></Label>
+            </FlexboxLayout>
+        </FlexboxLayout>
+    </StackLayout>
+
+    <app-nav></app-nav>
 </FlexboxLayout>
