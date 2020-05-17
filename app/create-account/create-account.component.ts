@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateAccountComponent implements OnInit {
 
+  nations = [{
+    text: "+84",
+    src: "~/assets/images/languages/vie.png"
+  }]
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  checkTap() {
+    console.log('checked')
   }
 
 }

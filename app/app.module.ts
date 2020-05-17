@@ -2,6 +2,8 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { NativeScriptModule } from 'nativescript-angular/nativescript.module';
 import { AppRoutingModule } from './app-routing.module';
 
+import { DropDownModule } from "nativescript-drop-down/angular";
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
@@ -13,6 +15,9 @@ import { CreateAccountComponent } from './create-account/create-account.componen
 import { VerifyPhoneComponent } from './verify-phone/verify-phone.component';
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
 
+import { components } from './components';
+import { HomePageComponent } from './home-page/home-page.component'
+
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from 'nativescript-angular/forms';
 
@@ -21,6 +26,7 @@ import { VerifyEmailComponent } from './verify-email/verify-email.component';
 
 @NgModule({
   declarations: [
+    ...components,
     AppComponent,
     HomeComponent,
     LoginComponent,
@@ -31,10 +37,12 @@ import { VerifyEmailComponent } from './verify-email/verify-email.component';
     CreateAccountComponent,
     VerifyPhoneComponent,
     VerifyEmailComponent,
+    HomePageComponent,
   ],
   imports: [
     NativeScriptModule,
     AppRoutingModule,
+    DropDownModule
   ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA],

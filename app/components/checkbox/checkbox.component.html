@@ -1,0 +1,10 @@
+<FlexboxLayout
+    class="checkbox {{ options.class }}"
+    [ngClass]="{ active: options.checked }"
+    (tap)="click()"
+>
+    <FlexboxLayout class="checkbox-square">
+        <StackLayout class="checkbox-active" flexGrow="1"> </StackLayout>
+    </FlexboxLayout>
+    <Label [text]="options.text" [textWrap]="options.textWrap"></Label>
+</FlexboxLayout>

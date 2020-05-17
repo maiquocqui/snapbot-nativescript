@@ -8,6 +8,10 @@ import { Page } from 'tns-core-modules/ui/page/page';
 })
 export class LoginComponent implements OnInit {
   languages = ['English', 'Chinese', 'Indonesian', 'Vietnamese', 'Japanese', 'German']
+  selectedLanguageIndex = 1;
+
+  isChecked = false;
+  isShowDropdown = false;
 
   constructor(private page: Page) { }
 
@@ -15,8 +19,22 @@ export class LoginComponent implements OnInit {
     this.page.actionBarHidden = true;
   }
 
-  selectLanguage(event) {
-    console.log(event)
+  rememberPassword(event) {
+    this.isChecked = event;
+    console.log(this.isChecked)
+  }
+
+  socialLink(social) {
+    console.log(social)
+  }
+
+  chooseLanguage() {
+    this.isShowDropdown = !this.isShowDropdown
+  }
+
+  languageChange(language) {
+    this.isShowDropdown = false;
+    console.log(language)
   }
 
 }

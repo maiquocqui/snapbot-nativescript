@@ -3,102 +3,130 @@
         <Image src="~/assets/images/logo.png"></Image>
     </FlexboxLayout>
 </ActionBar>
-<ScrollView>
+<ScrollView backgroundColor="#242424">
     <FlexboxLayout
         flexDirection="column"
         flexWrap="nowrap"
         justifyContent="space-between"
-        backgroundColor="#242424"
     >
-        <StackLayout class="container create-account-page">
-            <Label
-                class="title mb-4"
-                textAlignment="center"
-                text="Create your account"
-                textTransform="uppercase"
-            ></Label>
-            <StackLayout>
-                <FlexboxLayout class="form-group row mb-3">
-                    <StackLayout class="col" flexGrow="1">
+        <AbsoluteLayout>
+            <StackLayout
+                class="container create-account-page"
+                top="0"
+                left="0"
+                width="100%"
+            >
+                <Label
+                    class="title mb-4"
+                    textAlignment="center"
+                    text="Create your account"
+                    textTransform="uppercase"
+                ></Label>
+                <StackLayout>
+                    <FlexboxLayout class="form-group row mb-3">
+                        <StackLayout class="col" flexGrow="1">
+                            <TextField
+                                class="form-control"
+                                hint="FIRST NAME"
+                                text=""
+                            ></TextField>
+                        </StackLayout>
+                        <StackLayout class="col" flexGrow="1">
+                            <TextField
+                                class="form-control"
+                                hint="LAST NAME"
+                                text=""
+                            ></TextField>
+                        </StackLayout>
+                    </FlexboxLayout>
+                    <StackLayout class="form-group mb-3">
                         <TextField
                             class="form-control"
-                            hint="FIRST NAME"
+                            hint="EMAIL"
                             text=""
                         ></TextField>
                     </StackLayout>
-                    <StackLayout class="col" flexGrow="1">
+                    <FlexboxLayout class="form-group row mb-3">
+                        <StackLayout class="col">
+                            <app-nation-select></app-nation-select>
+                        </StackLayout>
+                        <StackLayout class="col" flexGrow="4">
+                            <TextField
+                                class="form-control"
+                                hint="PHONE NUMBER"
+                                text=""
+                            ></TextField>
+                        </StackLayout>
+                    </FlexboxLayout>
+                    <StackLayout class="form-group mb-3">
                         <TextField
                             class="form-control"
-                            hint="LAST NAME"
+                            hint="PASSWORD"
                             text=""
+                            secure="true"
                         ></TextField>
                     </StackLayout>
-                </FlexboxLayout>
-                <StackLayout class="form-group mb-3">
-                    <TextField
-                        class="form-control"
-                        hint="EMAIL"
-                        text=""
-                    ></TextField>
-                </StackLayout>
-                <FlexboxLayout class="form-group row mb-3">
-                    <StackLayout class="col" flexGrow="1">
+                    <StackLayout class="form-group mb-3">
                         <TextField
                             class="form-control"
-                            hint="+84"
+                            hint="CONFIRM PASSWORD"
                             text=""
+                            secure="true"
                         ></TextField>
                     </StackLayout>
-                    <StackLayout class="col" flexGrow="3">
-                        <TextField
-                            class="form-control"
-                            hint="PHONE NUMBER"
-                            text=""
-                        ></TextField>
+                    <StackLayout class="form-group mb-3">
+                        <FlexboxLayout
+                            class="form-control form-control-qr"
+                            alignItems="center"
+                            justifyContent="space-between"
+                        >
+                            <TextField
+                                hint="REFERRAL CODE"
+                                text=""
+                                secure="true"
+                                flexGrow="1"
+                            ></TextField>
+                            <Label
+                                class="fa"
+                                text="&#xf029;"
+                                top="10"
+                                left="100%"
+                            ></Label>
+                        </FlexboxLayout>
                     </StackLayout>
-                </FlexboxLayout>
-                <StackLayout class="form-group mb-3">
-                    <TextField
-                        class="form-control"
-                        hint="PASSWORD"
-                        text=""
-                        secure="true"
-                    ></TextField>
-                </StackLayout>
-                <StackLayout class="form-group mb-3">
-                    <TextField
-                        class="form-control"
-                        hint="CONFIRM PASSWORD"
-                        text=""
-                        secure="true"
-                    ></TextField>
-                </StackLayout>
-                <StackLayout class="form-group mb-3">
-                    <TextField
-                        class="form-control"
-                        hint="REFERRAL CODE"
-                        text=""
-                        secure="true"
-                    ></TextField>
                 </StackLayout>
             </StackLayout>
-        </StackLayout>
+            <!-- <StackLayout class="nation-select" top="100" left="100">
+                <ListView [items]="nations">
+                    <ng-template let-item="item" let-odd="odd" let-even="even">
+                        <FlexboxLayout class="nation-select-item">
+                            <Image [src]="item.src" width="30"></Image>
+                            <Label [text]="item.text"></Label>
+                        </FlexboxLayout>
+                    </ng-template>
+                </ListView>
+            </StackLayout> -->
+        </AbsoluteLayout>
         <StackLayout class="container">
-            <FlexboxLayout class="checkbox active mt-3 mb-4">
-                <FlexboxLayout class="checkbox-square">
-                    <StackLayout class="checkbox-active" flexGrow="1">
-                    </StackLayout>
-                </FlexboxLayout>
-                <FlexboxLayout alignItems="center">
-                    <Label class="text-mute" text="I agree to all "></Label>
-                    <Label
-                        class="text-white"
-                        text="Terms & Conditions"
-                        color="#fff"
-                    ></Label>
-                </FlexboxLayout>
+            <FlexboxLayout alignItems="center" class="pl-4 pr-4">
+                <app-checkbox
+                    [options]="{
+                        text: 'I agree to all ',
+                        class: 'mt-4 mb-4'
+                    }"
+                ></app-checkbox>
+                <Label
+                    class="text-white"
+                    text="Terms & Conditions"
+                    color="#fff"
+                    (tap)="checkTap()"
+                ></Label>
             </FlexboxLayout>
-            <Button class="btn-primary" text="CREATE ACCOUNT"></Button>
+            <Button
+                class="btn-primary"
+                text="CREATE ACCOUNT"
+                (tap)="checkTap()"
+            ></Button>
             <FlexboxLayout
                 class="mt-4 mb-4"
                 alignItems="center"
@@ -113,6 +141,7 @@
                     text="Sign in"
                     textAlignment="center"
                     fontWeight="500"
+                    (tap)="checkTap()"
                 ></Label>
             </FlexboxLayout>
         </StackLayout>

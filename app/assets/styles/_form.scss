@@ -15,7 +15,6 @@
     flex-direction: row;
     align-items: center;
     align-content: center;
-    padding: 0 25;
     .checkbox-square {
         width: 16;
         height: 16;
@@ -30,9 +29,67 @@
         margin: 2;
         opacity: 0;
     }
+    label {
+        color: #808080;
+    }
     &.active {
         .checkbox-active {
             opacity: 1;
         }
+    }
+}
+
+.form-control-nation {
+    width: 120;
+    padding: 15 25;
+    Label {
+        color: #cdcdcd;
+        font-size: 16;
+        font-weight: 500;
+        margin-left: 10;
+    }
+    TextField {
+        background: none;
+        border-width: 0;
+        border-color: #393939;
+        background: #393939;
+        padding: 0 0;
+        font-size: 16;
+        font-weight: 500;
+        line-height: 16;
+        margin-left: 10;
+        placeholder-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+.nation-select {
+    background-color: #393939;
+    .nation-select-item {
+        Image {
+        }
+        Label {
+            margin-left: 10;
+        }
+    }
+}
+
+.form-control-qr {
+    padding: 15 25;
+    TextField {
+        background: none;
+        border-width: 0;
+        border-color: #393939;
+        background: #393939;
+        padding: 0 0;
+        font-size: 16;
+        font-weight: 500;
+        line-height: 16;
+        margin-left: 10;
+        placeholder-color: rgba(255, 255, 255, 0.2);
+    }
+    Label {
+        color: #cdcdcd;
+        font-size: 18;
+        font-weight: 500;
     }
 }

@@ -11,6 +11,7 @@ import { ModalErrorComponent } from './modal-error/modal-error.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { VerifyPhoneComponent } from './verify-phone/verify-phone.component';
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'modal-success', component: ModalSuccessComponent },
   { path: 'modal-error', component: ModalErrorComponent },
   { path: 'create-account', component: CreateAccountComponent },
+  { path: 'home-page', component: HomePageComponent },
 ];
 
 @NgModule({
