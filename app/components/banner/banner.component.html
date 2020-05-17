@@ -1,4 +1,4 @@
-<FlexboxLayout class="{{ options.class }}">
+<FlexboxLayout class="{{ options.class }}" flexDirection="column" height="250">
     <Carousel
         #myCarousel
         debug="false"
@@ -8,8 +8,8 @@
         (pageChanged)="myChangePageEvent($event)"
         android:indicatorAnimation="slide"
         indicatorColor="#fff"
-        indicatorOffset="0, 0"
-        showIndicator="true"
+        indicatorOffset="100, 0"
+        showIndicator="false"
     >
         <CarouselItem
             *ngFor="let item of banners"

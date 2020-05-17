@@ -10,20 +10,27 @@
 >
     <StackLayout>
         <app-banner [options]="{ class: 'mt-2' }"></app-banner>
-        <FlexboxLayout class="total-balance">
-            <FlexboxLayout class="balance-title" alignItems="center">
-                <Label text="Total Balance"></Label>
-                <Label class="fa" text="&#xf06e;"></Label>
+        <StackLayout class="container-fluid">
+            <FlexboxLayout class="total-balance">
+                <FlexboxLayout class="balance-title" alignItems="center">
+                    <Label text="Total Balance"></Label>
+                    <Label class="fa" text="&#xf06e;"></Label>
+                </FlexboxLayout>
+                <FlexboxLayout class="balance-amount mt-2 mb-1">
+                    <TextView
+                        class="balance-number"
+                        text="$ 3,125.00"
+                        [secure]="isSecureBalance"
+                    ></TextView>
+                    <Label
+                        class="fa"
+                        text="&#xf029;"
+                        top="10"
+                        left="100%"
+                    ></Label>
+                </FlexboxLayout>
             </FlexboxLayout>
-            <FlexboxLayout class="balance-amount mt-2 mb-1">
-                <TextView
-                    class="balance-number"
-                    text="$ 3,125.00"
-                    [secure]="isSecureBalance"
-                ></TextView>
-                <Label class="fa" text="&#xf029;" top="10" left="100%"></Label>
-            </FlexboxLayout>
-        </FlexboxLayout>
+        </StackLayout>
     </StackLayout>
 
     <app-nav></app-nav>
