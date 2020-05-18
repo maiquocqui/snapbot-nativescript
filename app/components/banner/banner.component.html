@@ -1,22 +1,23 @@
-<FlexboxLayout class="{{ options.class }}" flexDirection="column" height="250">
+<FlexboxLayout class="banner-wrap {{options.class}}">
     <Carousel
         #myCarousel
         debug="false"
         [items]="banners"
         width="100%"
+        height="240"
         color="white"
         (pageChanged)="myChangePageEvent($event)"
         android:indicatorAnimation="slide"
         indicatorColor="#fff"
-        indicatorOffset="100, 0"
-        showIndicator="false"
+        indicatorOffset="0, 0"
+        showIndicator="true"
     >
         <CarouselItem
             *ngFor="let item of banners"
             verticalAlignment="middle"
             (tap)="myTapPageEvent()"
         >
-            <StackLayout class="container">
+            <StackLayout class="container-fluid">
                 <Image [src]="item.src"></Image>
             </StackLayout>
         </CarouselItem>

@@ -1,6 +1,16 @@
 .form-group {
 }
 
+.form-group-inline {
+    Label {
+        padding: 7 20 7 0;
+        opacity: 0.5;
+    }
+    .form-control {
+        width: 100%;
+    }
+}
+
 .form-control {
     font-size: 16;
     font-weight: 500;
@@ -9,6 +19,9 @@
     color: #cdcdcd;
     background: #393939;
     placeholder-color: rgba(255, 255, 255, 0.2);
+    &.form-control-sm {
+        padding: 10 25;
+    }
 }
 
 .checkbox {

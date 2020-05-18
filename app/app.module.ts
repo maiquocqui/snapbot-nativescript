@@ -15,6 +15,7 @@ import { VerifyEmailComponent } from './verify-email/verify-email.component';
 
 import { components } from './components';
 import { HomePageComponent } from './home-page/home-page.component'
+import { SwapComponent } from './swap/swap.component';
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from 'nativescript-angular/forms';
@@ -36,6 +37,7 @@ import { HomePageComponent } from './home-page/home-page.component'
     VerifyPhoneComponent,
     VerifyEmailComponent,
     HomePageComponent,
+    SwapComponent
   ],
   imports: [
     NativeScriptModule,

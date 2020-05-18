@@ -13,4 +13,9 @@ export class HomePageComponent implements OnInit {
   ngOnInit() {
   }
 
+  toggleBalance() {
+    this.isSecureBalance = !this.isSecureBalance;
+    console.log(this.isSecureBalance);
+  }
+
 }

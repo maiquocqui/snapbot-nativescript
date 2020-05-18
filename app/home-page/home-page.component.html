@@ -3,35 +3,211 @@
         <Image src="~/assets/images/logo.png"></Image>
     </FlexboxLayout>
 </ActionBar>
-<FlexboxLayout
-    backgroundColor="#242424"
-    flexDirection="column"
-    justifyContent="space-between"
->
-    <StackLayout>
-        <app-banner [options]="{ class: 'mt-2' }"></app-banner>
-        <StackLayout class="container-fluid">
-            <FlexboxLayout class="total-balance">
-                <FlexboxLayout class="balance-title" alignItems="center">
-                    <Label text="Total Balance"></Label>
-                    <Label class="fa" text="&#xf06e;"></Label>
-                </FlexboxLayout>
-                <FlexboxLayout class="balance-amount mt-2 mb-1">
-                    <TextView
-                        class="balance-number"
-                        text="$ 3,125.00"
-                        [secure]="isSecureBalance"
-                    ></TextView>
+<AbsoluteLayout>
+    <FlexboxLayout
+        class="home-page"
+        top="0"
+        left="0"
+        width="100%"
+        height="100%"
+    >
+        <StackLayout flexGrow="1">
+            <ScrollView
+                class="page-scroll-view"
+                orientation="vertical"
+            >
+                <FlexboxLayout flexDirection="column">
+                    <app-banner [options]="{ class: 'mt-2 mb-2' }"></app-banner>
+                    <StackLayout class="container-fluid">
+                        <FlexboxLayout class="total-balance">
+                            <FlexboxLayout
+                                class="balance-title"
+                                alignItems="center"
+                            >
+                                <Label text="Total Balance"></Label>
+                                <Label
+                                    class="fa"
+                                    text="&#xf06e;"
+                                    (tap)="toggleBalance()"
+                                ></Label>
+                            </FlexboxLayout>
+                            <FlexboxLayout class="balance-amount mt-2 mb-2">
+                                <TextView
+                                    class="balance-number"
+                                    text="$ 3,125.00"
+                                    [secure]="true"
+                                ></TextView>
+                                <Label
+                                    class="fa"
+                                    text="&#xf029;"
+                                    top="10"
+                                    left="100%"
+                                ></Label>
+                            </FlexboxLayout>
+                            <FlexboxLayout class="balance-actions">
+                                <FlexboxLayout class="action-item">
+                                    <Image
+                                        src="~/assets/images/ic-depo.png"
+                                    ></Image>
+                                    <Label text="DEPOSIT"></Label>
+                                </FlexboxLayout>
+                                <FlexboxLayout class="action-item">
+                                    <Image
+                                        src="~/assets/images/ic-depo.png"
+                                    ></Image>
+                                    <Label text="SWAP"></Label>
+                                </FlexboxLayout>
+                                <FlexboxLayout class="action-item">
+                                    <Image
+                                        src="~/assets/images/ic-depo.png"
+                                    ></Image>
+                                    <Label text="WITHDRAWAL"></Label>
+                                </FlexboxLayout>
+                            </FlexboxLayout>
+                        </FlexboxLayout>
+                    </StackLayout>
                     <Label
-                        class="fa"
-                        text="&#xf029;"
-                        top="10"
-                        left="100%"
+                        class="container-fluid home-title"
+                        text="EXCHANGE MARKET"
                     ></Label>
+                    <ScrollView
+                        class="exchange-market"
+                        orientation="horizontal"
+                    >
+                        <FlexboxLayout class="exchange-market-swipe">
+                            <StackLayout class="market-item">
+                                <FlexboxLayout class="currency">
+                                    <Image
+                                        class="currency-icon"
+                                        src="~/assets/images/ic-bitcoin.png"
+                                    ></Image>
+                                    <StackLayout class="currency-code">
+                                        <Label class="code1" text="BTC"></Label>
+                                        <Label
+                                            class="code2"
+                                            text="/USDT"
+                                        ></Label>
+                                    </StackLayout>
+                                    <StackLayout class="currency-value">
+                                        <Label
+                                            class="value1"
+                                            text="6783.95"
+                                        ></Label>
+                                        <Label
+                                            class="value2"
+                                            text="0.4400"
+                                        ></Label>
+                                    </StackLayout>
+                                </FlexboxLayout>
+                                <StackLayout class="chart-wrap"> </StackLayout>
+                            </StackLayout>
+                            <StackLayout class="market-item">
+                                <FlexboxLayout class="currency">
+                                    <Image
+                                        class="currency-icon"
+                                        src="~/assets/images/ic-bitcoin.png"
+                                    ></Image>
+                                    <StackLayout class="currency-code">
+                                        <Label class="code1" text="BTC"></Label>
+                                        <Label
+                                            class="code2"
+                                            text="/USDT"
+                                        ></Label>
+                                    </StackLayout>
+                                    <StackLayout class="currency-value">
+                                        <Label
+                                            class="value1"
+                                            text="6783.95"
+                                        ></Label>
+                                        <Label
+                                            class="value2"
+                                            text="0.4400"
+                                        ></Label>
+                                    </StackLayout>
+                                </FlexboxLayout>
+                                <StackLayout class="chart-wrap"> </StackLayout>
+                            </StackLayout>
+                            <StackLayout class="market-item">
+                                <FlexboxLayout class="currency">
+                                    <Image
+                                        class="currency-icon"
+                                        src="~/assets/images/ic-bitcoin.png"
+                                    ></Image>
+                                    <StackLayout class="currency-code">
+                                        <Label class="code1" text="BTC"></Label>
+                                        <Label
+                                            class="code2"
+                                            text="/USDT"
+                                        ></Label>
+                                    </StackLayout>
+                                    <StackLayout class="currency-value">
+                                        <Label
+                                            class="value1"
+                                            text="6783.95"
+                                        ></Label>
+                                        <Label
+                                            class="value2"
+                                            text="0.4400"
+                                        ></Label>
+                                    </StackLayout>
+                                </FlexboxLayout>
+                                <StackLayout class="chart-wrap"> </StackLayout>
+                            </StackLayout>
+                        </FlexboxLayout>
+                    </ScrollView>
+                    <Label
+                        class="container-fluid home-title"
+                        text="SNAP APPS"
+                    ></Label>
+                    <ScrollView class="snap-apps" orientation="horizontal">
+                        <FlexboxLayout class="snap-app-swipe">
+                            <StackLayout class="app-item">
+                                <FlexboxLayout class="app-icon">
+                                    <Image src=""></Image>
+                                </FlexboxLayout>
+                                <Label
+                                    class="app-name"
+                                    text="Wealth Advisory"
+                                ></Label>
+                            </StackLayout>
+                            <StackLayout class="app-item">
+                                <FlexboxLayout class="app-icon">
+                                    <Image src=""></Image>
+                                </FlexboxLayout>
+                                <Label
+                                    class="app-name"
+                                    text="Wealth Advisory"
+                                ></Label>
+                            </StackLayout>
+                            <StackLayout class="app-item">
+                                <FlexboxLayout class="app-icon">
+                                    <Image src=""></Image>
+                                </FlexboxLayout>
+                                <Label
+                                    class="app-name"
+                                    text="Wealth Advisory"
+                                ></Label>
+                            </StackLayout>
+                            <StackLayout class="app-item">
+                                <FlexboxLayout class="app-icon">
+                                    <Image src=""></Image>
+                                </FlexboxLayout>
+                                <Label
+                                    class="app-name"
+                                    text="Wealth Advisory"
+                                ></Label>
+                            </StackLayout>
+                        </FlexboxLayout>
+                    </ScrollView>
                 </FlexboxLayout>
-            </FlexboxLayout>
+            </ScrollView>
         </StackLayout>
-    </StackLayout>
-
-    <app-nav></app-nav>
-</FlexboxLayout>
+        <StackLayout flexShrink="0">
+            <app-nav></app-nav>
+        </StackLayout>
+    </FlexboxLayout>
+    <FlexboxLayout class="btn-refer" left="0" top="200" justifyContent="flex-end">
+        <Label text="REFER & GET $ 50"></Label>
+        <Label class="fa" text="&#xf00d;" (tap)="toggleBalance()"></Label>
+    </FlexboxLayout>
+</AbsoluteLayout>

@@ -1,4 +1,8 @@
-/* Add mobile styles for the component here.  */
+.home-page {
+    flex-direction: column;
+    background-color: #242424;
+}
+
 .total-balance {
     background-color: #2f2f2f;
     border-radius: 20;
@@ -30,5 +34,124 @@
     .fa {
         font-size: 20;
         margin-left: 15;
+    }
+}
+.balance-actions {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    .action-item {
+        flex-direction: column;
+        align-items: center;
+        Image {
+            width: 40;
+        }
+        Label {
+            font-size: 11;
+            margin-top: 5;
+        }
+    }
+}
+
+.home-title {
+    font-size: 14;
+    font-weight: 700;
+    margin: 5 0;
+}
+
+.exchange-market {
+    .exchange-market-swipe {
+        padding: 0 15;
+    }
+    .market-item {
+        width: 160;
+        background-color: #2f2f2f;
+        border-radius: 15;
+        + .market-item {
+            margin-left: 10;
+        }
+        .currency {
+            align-items: center;
+            background-color: #343434;
+            padding: 5 10;
+            margin-top: 15;
+            .currency-icon {
+                width: 24;
+            }
+            .currency-code {
+                padding-left: 10;
+                .code1 {
+                    font-size: 12;
+                    font-weight: 500;
+                }
+                .code2 {
+                    font-size: 10;
+                }
+            }
+            .currency-value {
+                flex-grow: 1;
+                text-align: right;
+                .value1 {
+                    font-size: 12;
+                    font-weight: 500;
+                }
+                .value2 {
+                    font-size: 10;
+                }
+            }
+        }
+        .chart-wrap {
+            height: 70;
+            border-radius: 5;
+            border-width: 1;
+            border-color: #fff;
+            margin: 10;
+        }
+    }
+}
+
+.snap-apps {
+    margin-bottom: 10;
+    .snap-app-swipe {
+        padding: 0 15;
+    }
+    .app-item {
+        width: 130;
+        + .app-item {
+            margin-left: 10;
+        }
+        .app-icon {
+            height: 100;
+            align-items: center;
+            justify-content: center;
+            background-color: #7424fb;
+            border-radius: 15 15 0 0;
+        }
+        .app-name {
+            font-size: 12;
+            font-weight: 500;
+            padding: 10;
+            background-color: #662acb;
+            border-radius: 0 0 15 15;
+        }
+    }
+}
+
+.btn-refer {
+    width: 185;
+    align-items: center;
+    color: #fff;
+    background-color: #d834ff;
+    border-radius: 0 100 100 0;
+    padding: 5;
+    Label {
+        font-size: 18;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .fa {
+        font-size: 12;
+        font-weight: 400;
+        margin: 0 5;
     }
 }
