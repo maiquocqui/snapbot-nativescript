@@ -7,85 +7,13 @@
     ></ActionItem> -->
 </ActionBar>
 <FlexboxLayout class="page-wrap">
-    <FlexboxLayout
-        flexDirection="column"
-        justifyContent="space-between"
-        flexGrow="1"
-    >
+    <FlexboxLayout flexDirection="column" justifyContent="space-between" flexGrow="1">
         <StackLayout flexGrow="1">
             <ScrollView orientation="vertical">
                 <FlexboxLayout flexDirection="column">
                     <Label
                         class="container swap-title"
                         text="Choose Token"
-                    ></Label>
-                    <ScrollView orientation="horizontal" class="token-list">
-                        <FlexboxLayout class="token-list-swipe container">
-                            <FlexboxLayout class="token-item active">
-                                <Image
-                                    flexShrink="0"
-                                    class="token-img"
-                                    src="~/assets/images/ic-bitcoin.png"
-                                >
-                                </Image>
-                                <StackLayout flexShrink="0" class="token-code">
-                                    <Label class="code1" text="BTC"></Label>
-                                    <Label class="code2" text="/USDT"></Label>
-                                </StackLayout>
-                                <StackLayout
-                                    flexGrow="1"
-                                    class="token-code"
-                                    textAlignment="right"
-                                >
-                                    <Label class="code1" text="0.00000"></Label>
-                                    <Label class="code2" text="0.00000"></Label>
-                                </StackLayout>
-                            </FlexboxLayout>
-                            <FlexboxLayout class="token-item">
-                                <Image
-                                    flexShrink="0"
-                                    class="token-img"
-                                    src="~/assets/images/ic-bitcoin.png"
-                                >
-                                </Image>
-                                <StackLayout flexShrink="0" class="token-code">
-                                    <Label class="code1" text="BTC"></Label>
-                                    <Label class="code2" text="/USDT"></Label>
-                                </StackLayout>
-                                <StackLayout
-                                    flexGrow="1"
-                                    class="token-code"
-                                    textAlignment="right"
-                                >
-                                    <Label class="code1" text="0.00000"></Label>
-                                    <Label class="code2" text="0.00000"></Label>
-                                </StackLayout>
-                            </FlexboxLayout>
-                            <FlexboxLayout class="token-item">
-                                <Image
-                                    flexShrink="0"
-                                    class="token-img"
-                                    src="~/assets/images/ic-bitcoin.png"
-                                >
-                                </Image>
-                                <StackLayout flexShrink="0" class="token-code">
-                                    <Label class="code1" text="BTC"></Label>
-                                    <Label class="code2" text="/USDT"></Label>
-                                </StackLayout>
-                                <StackLayout
-                                    flexGrow="1"
-                                    class="token-code"
-                                    textAlignment="right"
-                                >
-                                    <Label class="code1" text="0.00000"></Label>
-                                    <Label class="code2" text="0.00000"></Label>
-                                </StackLayout>
-                            </FlexboxLayout>
-                        </FlexboxLayout>
-                    </ScrollView>
-                    <Label
-                        class="container swap-title"
-                        text="Choose Swap"
                     ></Label>
                     <ScrollView orientation="horizontal" class="token-list">
                         <FlexboxLayout class="token-list-swipe container">
@@ -161,19 +89,6 @@
                                 <TextField
                                     class="exchange-input"
                                     hint=""
-                                    text="100.0"
-                                    flewGrow="1"
-                                ></TextField>
-                                <Label
-                                    class="exchange-label"
-                                    text="SNAP"
-                                    flexShrink="0"
-                                ></Label>
-                            </FlexboxLayout>
-                            <FlexboxLayout class="exchange-field">
-                                <TextField
-                                    class="exchange-input"
-                                    hint=""
                                     text="2.1450"
                                     flewGrow="1"
                                 ></TextField>
@@ -185,13 +100,31 @@
                             </FlexboxLayout>
                         </FlexboxLayout>
                         <Label
-                            class="text-sm text-mute"
-                            text="Rate: 1 Snap = 0.00000739 BTC"
-                        ></Label>
-                        <Label
                             class="text-sm text-mute mb-2"
                             text="Fee: 0.0005 BTC"
                         ></Label>
+                        <FlexboxLayout class="form-group-inline mb-2">
+                            <Label
+                                text="Google Auth. code"
+                                flexShrink="0"
+                            ></Label>
+                            <FlexboxLayout
+                                class="form-control form-control-qr form-control-sm"
+                                flewGrow="1"
+                            >
+                                <TextField
+                                    hint=""
+                                    text="123456"
+                                    flewGrow="1"
+                                    width="100%"
+                                ></TextField>
+                                <Label
+                                    class="fa"
+                                    text="&#xf029;"
+                                    flexShrink="0"
+                                ></Label>
+                            </FlexboxLayout>
+                        </FlexboxLayout>
                         <FlexboxLayout class="form-group-inline mb-2">
                             <Label
                                 text="Google Auth. code"
@@ -205,16 +138,25 @@
                             ></TextField>
                         </FlexboxLayout>
                         <Label
-                            class="text-xs text-error"
+                            class="text-xs text-error mb-2"
                             whiteSpace="normal"
                             text="* Notice: if you have not activated Google Authenticator, please active Google Authenticator to enable send in Account Settings"
+                        ></Label>
+                        <Label
+                            class="text-xs text-mute"
+                            text="*Important to transfer Snap to Wallet:"
+                        ></Label>
+                        <Label
+                            class="text-xs text-mute"
+                            text="Initiate send todate - Receive tomorrow: send takes on day to be proceed as we will finish trading by the end of today"
+                            whiteSpace="normal"
                         ></Label>
                     </StackLayout>
                 </FlexboxLayout>
             </ScrollView>
         </StackLayout>
         <StackLayout class="container btn-wrap pt-4 pb-4" flexShrink="0">
-            <Button class="btn-primary active" text="SWAP"></Button>
+            <Button class="btn-primary active" text="WITHDRAW"></Button>
         </StackLayout>
     </FlexboxLayout>
     <StackLayout flexShrink="0">
