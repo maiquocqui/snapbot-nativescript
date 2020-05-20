@@ -17,6 +17,8 @@ import { components } from './components';
 import { HomePageComponent } from './home-page/home-page.component'
 import { SwapComponent } from './swap/swap.component';
 import { WithdrawComponent } from './withdraw/withdraw.component';
+import { RewardsComponent } from './rewards/rewards.component';
+import { RewardsReportComponent } from './rewards-report/rewards-report.component';
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from 'nativescript-angular/forms';
@@ -39,7 +41,9 @@ import { WithdrawComponent } from './withdraw/withdraw.component';
     VerifyEmailComponent,
     HomePageComponent,
     SwapComponent,
-    WithdrawComponent
+    WithdrawComponent,
+    RewardsComponent,
+    RewardsReportComponent
   ],
   imports: [
     NativeScriptModule,

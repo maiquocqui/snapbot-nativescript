@@ -3,6 +3,11 @@ Label {
     color: #fff;
 }
 
+.title-sm {
+    font-size: 14;
+    font-weight: 600;
+}
+
 .title {
     font-size: 20;
     font-weight: bold;
@@ -11,8 +16,21 @@ Label {
 .text-xs {
     font-size: 10;
 }
-.text-sm{
+.text-sm {
     font-size: 12;
+}
+.text-md {
+    font-size: 14;
+}
+
+.text-500 {
+    font-weight: 500;
+}
+.text-600 {
+    font-weight: 600;
+}
+.text-700 {
+    font-weight: 700;
 }
 
 .text-white {
@@ -23,4 +41,8 @@ Label {
 }
 .text-error {
     color: #961111;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
 }

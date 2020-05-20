@@ -36,14 +36,41 @@
     margin-bottom: 48;
 }
 
-.w-100 {
-    width: 100%;
+.ml-1 {
+    margin-left: 4px;
+}
+.ml-2 {
+    margin-left: 8px;
+}
+.ml-3 {
+    margin-left: 16px;
+}
+.ml-4 {
+    margin-left: 24px;
 }
 
+.pt-1 {
+    padding-top: 4;
+}
+.pt-2 {
+    padding-top: 8;
+}
+.pt-3 {
+    padding-top: 16;
+}
 .pt-4 {
     padding-top: 24;
 }
 
+.pb-1 {
+    padding-bottom: 4;
+}
+.pb-2 {
+    padding-bottom: 8;
+}
+.pb-3 {
+    padding-bottom: 16;
+}
 .pb-4 {
     padding-bottom: 24;
 }
@@ -54,4 +81,8 @@
 
 .pr-4 {
     padding-right: 24;
+}
+
+.w-100 {
+    width: 100%;
 }

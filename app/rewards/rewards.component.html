@@ -1,0 +1,114 @@
+<ActionBar title="REWARDS" color="#fff">
+    <NavigationButton class="fa" icon="font://&#xf104;"></NavigationButton>
+    <!-- <ActionItem
+        class="fa"
+        icon="font://&#xf104;"
+        ios.position="right"
+    ></ActionItem> -->
+</ActionBar>
+<FlexboxLayout class="page-wrap">
+    <FlexboxLayout flexDirection="column" flexGrow="1">
+        <StackLayout class="container pt-2">
+            <Label
+                class="title-sm text-uppercase mb-2"
+                text="Our performance"
+            ></Label>
+            <StackLayout class="rewards-chart-content mb-3"> </StackLayout>
+            <!-- <RadCartesianChart
+                tkExampleTitle
+                tkToggleNavButton
+                class="rewards-chart"
+            >
+                <CategoricalAxis tkCartesianHorizontalAxis></CategoricalAxis>
+                <LinearAxis tkCartesianVerticalAxis></LinearAxis>
+                <LineSeries
+                    tkCartesianSeries
+                    [items]="categoricalSource"
+                    categoryProperty="Country"
+                    valueProperty="Amount"
+                    class="rewards-chart-content"
+                ></LineSeries>
+            </RadCartesianChart> -->
+            <FlexboxLayout class="chart-report mb-4">
+                <StackLayout class="report-item">
+                    <Label
+                        class="text-uppercase text-sm"
+                        text="Total Reward"
+                    ></Label>
+                    <FlexboxLayout alignItems="center">
+                        <Label class="title" text="0.00"></Label>
+                        <Label class="text-sm ml-3" text="SNAP"></Label>
+                    </FlexboxLayout>
+                    <Label text="= $0"></Label>
+                </StackLayout>
+                <StackLayout class="report-item">
+                    <Label class="text-uppercase" text="Total Reward"></Label>
+                    <FlexboxLayout alignItems="center">
+                        <Label class="title" text="0.00"></Label>
+                        <Label class="text-sm ml-3" text="SNAP"></Label>
+                    </FlexboxLayout>
+                    <Label text="= $0"></Label>
+                </StackLayout>
+            </FlexboxLayout>
+            <Button
+                class="btn-primary active"
+                text="view daily rewards report"
+            ></Button>
+        </StackLayout>
+        <StackLayout class="container-fluid mt-3">
+            <StackLayout class="highlight-report">
+                <FlexboxLayout class="weekly-report">
+                    <FlexboxLayout class="currency-info">
+                        <Image src="~/assets/images/ic-bitcoin-c.png"></Image>
+                        <StackLayout class="caption">
+                            <Label
+                                class="text-md text-600"
+                                text="BTC (Bitcoin)"
+                            ></Label>
+                            <Label class="text-sm" text="$ 6726.44"></Label>
+                        </StackLayout>
+                    </FlexboxLayout>
+                    <StackLayout class="report-rate">
+                        <Label class="title" text="1.282284 %"></Label>
+                        <Label
+                            class="text-sm"
+                            text="Est Weekly Rewards"
+                        ></Label>
+                    </StackLayout>
+                </FlexboxLayout>
+            </StackLayout>
+            <FlexboxLayout class="report-detail pt-2">
+                <StackLayout class="report-item mb-2" width="100%">
+                    <Label class="text-uppercase" text="BALANCE"></Label>
+                    <FlexboxLayout alignItems="center" justifyContent="center">
+                        <Label class="title" text="0.00"></Label>
+                        <!-- <Label class="text-sm ml-3" text="SNAP"></Label> -->
+                    </FlexboxLayout>
+                    <Label text="= $0"></Label>
+                </StackLayout>
+                <StackLayout class="report-item mb-2">
+                    <Label class="text-uppercase" text="Total Reward"></Label>
+                    <FlexboxLayout alignItems="center" justifyContent="center">
+                        <Label class="title" text="0.00"></Label>
+                        <Label class="text-sm ml-3" text="SNAP"></Label>
+                    </FlexboxLayout>
+                    <Label text="= $0"></Label>
+                </StackLayout>
+                <StackLayout class="report-item mb-2">
+                    <Label
+                        class="text-uppercase"
+                        text="YESTERDAY'S REWARD"
+                    ></Label>
+                    <FlexboxLayout alignItems="center" justifyContent="center">
+                        <Label class="title" text="0.00"></Label>
+                        <Label class="text-sm ml-3" text="SNAP"></Label>
+                    </FlexboxLayout>
+                    <Label text="= $0"></Label>
+                </StackLayout>
+            </FlexboxLayout>
+        </StackLayout>
+    </FlexboxLayout>
+    <StackLayout flexShrink="0">
+        <app-nav></app-nav>
+    </StackLayout>
+</FlexboxLayout>

@@ -14,6 +14,7 @@ import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { SwapComponent } from './swap/swap.component';
 import { WithdrawComponent } from './withdraw/withdraw.component';
+import { RewardsComponent } from './rewards/rewards.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -28,7 +29,8 @@ const routes: Routes = [
   { path: 'create-account', component: CreateAccountComponent },
   { path: 'home-page', component: HomePageComponent },
   { path: 'swap', component: SwapComponent },
-  { path: 'withdraw', component: WithdrawComponent}
+  { path: 'withdraw', component: WithdrawComponent},
+  { path: 'rewards', component: RewardsComponent},
 ];
 
 @NgModule({
