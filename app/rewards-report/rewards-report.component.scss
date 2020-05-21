@@ -1,1 +1,8 @@
-/* Add mobile styles for the component here.  */
+.no-data {
+    text-align: center;
+    opacity: 0.3;
+    .fa {
+        font-size: 52;
+        margin-bottom: 20;
+    }
+}

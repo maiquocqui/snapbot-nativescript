@@ -15,6 +15,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { SwapComponent } from './swap/swap.component';
 import { WithdrawComponent } from './withdraw/withdraw.component';
 import { RewardsComponent } from './rewards/rewards.component';
+import { RewardsReportComponent } from './rewards-report/rewards-report.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -31,6 +32,7 @@ const routes: Routes = [
   { path: 'swap', component: SwapComponent },
   { path: 'withdraw', component: WithdrawComponent},
   { path: 'rewards', component: RewardsComponent},
+  { path: 'rewards-report', component: RewardsReportComponent},
 ];
 
 @NgModule({
