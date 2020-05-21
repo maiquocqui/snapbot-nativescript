@@ -20,6 +20,5 @@ export class PerformanceComponent implements OnInit {
     this._categoricalSource = new ObservableArray(
       this._dataService.getCategoricalSource()
     );
-    console.log(this.categoricalSource);
   }
 }

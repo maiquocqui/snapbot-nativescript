@@ -13,9 +13,63 @@
         flexGrow="1"
     >
         <StackLayout flexGrow="1">
-            <ScrollView> </ScrollView>
+            <ScrollView>
+                <StackLayout class="container">
+                    <RadCartesianChart
+                        tkExampleTitle
+                        tkToggleNavButton
+                        height="200"
+                        class="mb-3"
+                    >
+                        <CategoricalAxis
+                            tkCartesianHorizontalAxis
+                        ></CategoricalAxis>
+                        <LinearAxis tkCartesianVerticalAxis></LinearAxis>
+                        <LineSeries
+                            tkCartesianSeries
+                            [items]="categoricalSource"
+                            categoryProperty="Country"
+                            valueProperty="Amount"
+                        ></LineSeries>
+                    </RadCartesianChart>
+                    <RadCartesianChart
+                        tkExampleTitle
+                        tkToggleNavButton
+                        height="200"
+                        class="mb-3"
+                    >
+                        <CategoricalAxis
+                            tkCartesianHorizontalAxis
+                        ></CategoricalAxis>
+                        <LinearAxis tkCartesianVerticalAxis></LinearAxis>
+                        <LineSeries
+                            tkCartesianSeries
+                            [items]="categoricalSource"
+                            categoryProperty="Country"
+                            valueProperty="Amount"
+                        ></LineSeries>
+                    </RadCartesianChart>
+                    <RadCartesianChart
+                        tkExampleTitle
+                        tkToggleNavButton
+                        height="200"
+                        class="mb-3"
+                    >
+                        <CategoricalAxis
+                            tkCartesianHorizontalAxis
+                        ></CategoricalAxis>
+                        <LinearAxis tkCartesianVerticalAxis></LinearAxis>
+                        <LineSeries
+                            tkCartesianSeries
+                            [items]="categoricalSource"
+                            categoryProperty="Country"
+                            valueProperty="Amount"
+                        ></LineSeries>
+                    </RadCartesianChart>
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
-        <StackLayout class="container pt44 pb-4" flexShrink="0">
+        <StackLayout class="container pt-3 pb-3" flexShrink="0">
             <Button
                 class="btn-primary active"
                 text="SEE WEEKLY PERFORMANCE"
