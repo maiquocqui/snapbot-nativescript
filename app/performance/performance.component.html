@@ -1,0 +1,28 @@
+<ActionBar title="PERFORMANCE" color="#fff">
+    <NavigationButton class="fa" icon="font://&#xf104;"></NavigationButton>
+    <!-- <ActionItem
+        class="fa"
+        icon="font://&#xf104;"
+        ios.position="right"
+    ></ActionItem> -->
+</ActionBar>
+<FlexboxLayout class="page-wrap">
+    <FlexboxLayout
+        flexDirection="column"
+        justifyContent="space-between"
+        flexGrow="1"
+    >
+        <StackLayout flexGrow="1">
+            <ScrollView> </ScrollView>
+        </StackLayout>
+        <StackLayout class="container pt44 pb-4" flexShrink="0">
+            <Button
+                class="btn-primary active"
+                text="SEE WEEKLY PERFORMANCE"
+            ></Button>
+        </StackLayout>
+    </FlexboxLayout>
+    <StackLayout flexShrink="0">
+        <app-nav></app-nav>
+    </StackLayout>
+</FlexboxLayout>
