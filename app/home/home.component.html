@@ -4,19 +4,54 @@
         <Image src="~/assets/images/logo.png"></Image>
     </FlexboxLayout>
 </ActionBar>
-<StackLayout class="p-20">
-    <Button [nsRouterLink]="['/login']" text="login"></Button>
-    <Button [nsRouterLink]="['/verify-code']" text="verify-code"></Button>
-    <Button [nsRouterLink]="['/verify-phone']" text="verify-phone"></Button>
-    <Button [nsRouterLink]="['/verify-email']" text="verify-email"></Button>
-    <Button [nsRouterLink]="['/reset-password']" text="reset-password"></Button>
-    <Button [nsRouterLink]="['/modal-success']" text="modal-success"></Button>
-    <Button [nsRouterLink]="['/modal-error']" text="modal-error"></Button>
-    <Button [nsRouterLink]="['/create-account']" text="create-account"></Button>
-    <Button [nsRouterLink]="['/home-page']" text="home-page"></Button>
-    <Button [nsRouterLink]="['/swap']" text="swap"></Button>
-    <Button [nsRouterLink]="['/withdraw']" text="withdraw"></Button>
-    <Button [nsRouterLink]="['/rewards']" text="rewards"></Button>
-    <Button [nsRouterLink]="['/rewards-report']" text="rewards report"></Button>
-    <Button [nsRouterLink]="['/performance']" text="performance"></Button>
+<StackLayout height="100%">
+    <ScrollView height="100%">
+        <StackLayout class="container-fluid pt-2 pb-2">
+            <Button [nsRouterLink]="['/login']" text="login"></Button>
+            <Button
+                [nsRouterLink]="['/verify-code']"
+                text="verify-code"
+            ></Button>
+            <Button
+                [nsRouterLink]="['/verify-phone']"
+                text="verify-phone"
+            ></Button>
+            <Button
+                [nsRouterLink]="['/verify-email']"
+                text="verify-email"
+            ></Button>
+            <Button
+                [nsRouterLink]="['/reset-password']"
+                text="reset-password"
+            ></Button>
+            <Button
+                [nsRouterLink]="['/modal-success']"
+                text="modal-success"
+            ></Button>
+            <Button
+                [nsRouterLink]="['/modal-error']"
+                text="modal-error"
+            ></Button>
+            <Button
+                [nsRouterLink]="['/create-account']"
+                text="create-account"
+            ></Button>
+            <Button [nsRouterLink]="['/home-page']" text="home-page"></Button>
+            <Button [nsRouterLink]="['/swap']" text="swap"></Button>
+            <Button [nsRouterLink]="['/withdraw']" text="withdraw"></Button>
+            <Button [nsRouterLink]="['/rewards']" text="rewards"></Button>
+            <Button
+                [nsRouterLink]="['/rewards-report']"
+                text="rewards report"
+            ></Button>
+            <Button
+                [nsRouterLink]="['/performance']"
+                text="performance"
+            ></Button>
+            <Button
+                [nsRouterLink]="['/performance-chart']"
+                text="performance chart"
+            ></Button>
+        </StackLayout>
+    </ScrollView>
 </StackLayout>

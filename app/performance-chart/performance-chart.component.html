@@ -1,0 +1,158 @@
+<ActionBar title="PERFORMANCE CHART" color="#fff">
+    <NavigationButton class="fa" icon="font://&#xf104;"></NavigationButton>
+    <!-- <ActionItem
+        class="fa"
+        icon="font://&#xf104;"
+        ios.position="right"
+    ></ActionItem> -->
+</ActionBar>
+<FlexboxLayout class="page-wrap">
+    <FlexboxLayout
+        flexDirection="column"
+        justifyContent="space-between"
+        flexGrow="1"
+        class="container"
+    >
+        <FlexboxLayout class="performance-table" flexGrow="1">
+            <FlexboxLayout class="table-head" flexShrink="0">
+                <Label class="name" text="Name"></Label>
+                <Label class="price" text="Price"></Label>
+                <Label class="weekly" text="Weekly"></Label>
+            </FlexboxLayout>
+            <StackLayout flexGrow="1" class="pb-4">
+                <ScrollView height="100%">
+                    <StackLayout>
+                        <FlexboxLayout class="table-row">
+                            <FlexboxLayout class="token-item" flexGrow="1">
+                                <Image
+                                    flexShrink="0"
+                                    class="token-img"
+                                    src="~/assets/images/ic-bitcoin.png"
+                                >
+                                </Image>
+                                <StackLayout flexShrink="0" class="token-code">
+                                    <Label class="code1" text="BTC"></Label>
+                                    <Label class="code2" text="/USDT"></Label>
+                                </StackLayout>
+                                <StackLayout
+                                    flexGrow="1"
+                                    class="token-code"
+                                    textAlignment="right"
+                                >
+                                    <Label class="code1" text="0.00000"></Label>
+                                    <Label class="code2" text="0.00000"></Label>
+                                </StackLayout>
+                            </FlexboxLayout>
+                            <FlexboxLayout class="token-percent" flexShrink="0">
+                                <Label text="+ 0.15%"></Label>
+                            </FlexboxLayout>
+                        </FlexboxLayout>
+                        <FlexboxLayout class="table-row">
+                            <FlexboxLayout class="token-item" flexGrow="1">
+                                <Image
+                                    flexShrink="0"
+                                    class="token-img"
+                                    src="~/assets/images/ic-bitcoin.png"
+                                >
+                                </Image>
+                                <StackLayout flexShrink="0" class="token-code">
+                                    <Label class="code1" text="BTC"></Label>
+                                    <Label class="code2" text="/USDT"></Label>
+                                </StackLayout>
+                                <StackLayout
+                                    flexGrow="1"
+                                    class="token-code"
+                                    textAlignment="right"
+                                >
+                                    <Label class="code1" text="0.00000"></Label>
+                                    <Label class="code2" text="0.00000"></Label>
+                                </StackLayout>
+                            </FlexboxLayout>
+                            <FlexboxLayout class="token-percent" flexShrink="0">
+                                <Label text="+ 0.15%"></Label>
+                            </FlexboxLayout>
+                        </FlexboxLayout>
+                        <FlexboxLayout class="table-row">
+                            <FlexboxLayout class="token-item" flexGrow="1">
+                                <Image
+                                    flexShrink="0"
+                                    class="token-img"
+                                    src="~/assets/images/ic-bitcoin.png"
+                                >
+                                </Image>
+                                <StackLayout flexShrink="0" class="token-code">
+                                    <Label class="code1" text="BTC"></Label>
+                                    <Label class="code2" text="/USDT"></Label>
+                                </StackLayout>
+                                <StackLayout
+                                    flexGrow="1"
+                                    class="token-code"
+                                    textAlignment="right"
+                                >
+                                    <Label class="code1" text="0.00000"></Label>
+                                    <Label class="code2" text="0.00000"></Label>
+                                </StackLayout>
+                            </FlexboxLayout>
+                            <FlexboxLayout class="token-percent" flexShrink="0">
+                                <Label text="+ 0.15%"></Label>
+                            </FlexboxLayout>
+                        </FlexboxLayout>
+                        <FlexboxLayout class="table-row">
+                            <FlexboxLayout class="token-item" flexGrow="1">
+                                <Image
+                                    flexShrink="0"
+                                    class="token-img"
+                                    src="~/assets/images/ic-bitcoin.png"
+                                >
+                                </Image>
+                                <StackLayout flexShrink="0" class="token-code">
+                                    <Label class="code1" text="BTC"></Label>
+                                    <Label class="code2" text="/USDT"></Label>
+                                </StackLayout>
+                                <StackLayout
+                                    flexGrow="1"
+                                    class="token-code"
+                                    textAlignment="right"
+                                >
+                                    <Label class="code1" text="0.00000"></Label>
+                                    <Label class="code2" text="0.00000"></Label>
+                                </StackLayout>
+                            </FlexboxLayout>
+                            <FlexboxLayout class="token-percent" flexShrink="0">
+                                <Label text="+ 0.15%"></Label>
+                            </FlexboxLayout>
+                        </FlexboxLayout>
+                        <FlexboxLayout class="table-row">
+                            <FlexboxLayout class="token-item" flexGrow="1">
+                                <Image
+                                    flexShrink="0"
+                                    class="token-img"
+                                    src="~/assets/images/ic-bitcoin.png"
+                                >
+                                </Image>
+                                <StackLayout flexShrink="0" class="token-code">
+                                    <Label class="code1" text="BTC"></Label>
+                                    <Label class="code2" text="/USDT"></Label>
+                                </StackLayout>
+                                <StackLayout
+                                    flexGrow="1"
+                                    class="token-code"
+                                    textAlignment="right"
+                                >
+                                    <Label class="code1" text="0.00000"></Label>
+                                    <Label class="code2" text="0.00000"></Label>
+                                </StackLayout>
+                            </FlexboxLayout>
+                            <FlexboxLayout class="token-percent" flexShrink="0">
+                                <Label text="+ 0.15%"></Label>
+                            </FlexboxLayout>
+                        </FlexboxLayout>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </FlexboxLayout>
+    </FlexboxLayout>
+    <StackLayout flexShrink="0">
+        <app-nav></app-nav>
+    </StackLayout>
+</FlexboxLayout>

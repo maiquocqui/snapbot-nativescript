@@ -17,6 +17,7 @@ import { WithdrawComponent } from './withdraw/withdraw.component';
 import { RewardsComponent } from './rewards/rewards.component';
 import { RewardsReportComponent } from './rewards-report/rewards-report.component';
 import { PerformanceComponent } from './performance/performance.component';
+import { PerformanceChartComponent } from './performance-chart/performance-chart.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -31,10 +32,11 @@ const routes: Routes = [
   { path: 'create-account', component: CreateAccountComponent },
   { path: 'home-page', component: HomePageComponent },
   { path: 'swap', component: SwapComponent },
-  { path: 'withdraw', component: WithdrawComponent},
-  { path: 'rewards', component: RewardsComponent},
-  { path: 'rewards-report', component: RewardsReportComponent},
-  { path: 'performance', component: PerformanceComponent},
+  { path: 'withdraw', component: WithdrawComponent },
+  { path: 'rewards', component: RewardsComponent },
+  { path: 'rewards-report', component: RewardsReportComponent },
+  { path: 'performance', component: PerformanceComponent },
+  { path: 'performance-chart', component: PerformanceChartComponent },
 ];
 
 @NgModule({
