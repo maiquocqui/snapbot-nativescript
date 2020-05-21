@@ -18,6 +18,7 @@ import { RewardsComponent } from './rewards/rewards.component';
 import { RewardsReportComponent } from './rewards-report/rewards-report.component';
 import { PerformanceComponent } from './performance/performance.component';
 import { PerformanceChartComponent } from './performance-chart/performance-chart.component';
+import { PerformanceWeeklyComponent } from './performance-weekly/performance-weekly.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -37,6 +38,7 @@ const routes: Routes = [
   { path: 'rewards-report', component: RewardsReportComponent },
   { path: 'performance', component: PerformanceComponent },
   { path: 'performance-chart', component: PerformanceChartComponent },
+  { path: 'performance-weekly', component: PerformanceWeeklyComponent },
 ];
 
 @NgModule({

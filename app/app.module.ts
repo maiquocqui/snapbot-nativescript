@@ -23,6 +23,7 @@ import { PerformanceComponent } from './performance/performance.component';
 import { services } from './services'
 import { NativeScriptUIChartModule } from 'nativescript-ui-chart/angular/chart-directives';
 import { PerformanceChartComponent } from './performance-chart/performance-chart.component';
+import { PerformanceWeeklyComponent } from './performance-weekly/performance-weekly.component';
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from 'nativescript-angular/forms';
@@ -49,7 +50,8 @@ import { PerformanceChartComponent } from './performance-chart/performance-chart
     RewardsComponent,
     RewardsReportComponent,
     PerformanceComponent,
-    PerformanceChartComponent
+    PerformanceChartComponent,
+    PerformanceWeeklyComponent
   ],
   imports: [
     NativeScriptModule,

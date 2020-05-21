@@ -1,0 +1,28 @@
+<ActionBar title="PERFORMANCE CHART" color="#fff">
+    <NavigationButton class="fa" icon="font://&#xf104;"></NavigationButton>
+    <!-- <ActionItem
+        class="fa"
+        icon="font://&#xf104;"
+        ios.position="right"
+    ></ActionItem> -->
+</ActionBar>
+<FlexboxLayout class="page-wrap">
+    <FlexboxLayout flexDirection="column" flexGrow="1">
+        <StackLayout class="text-center">
+            <Image class="logo-h mb-2" src="~/assets/images/logo.png"></Image>
+            <Label class="title text-uppercase" text="Report date"></Label>
+            <Label
+                class="text-sm text-500 mb-4"
+                text="(06/04/2020 - 12/04/2020)"
+            ></Label>
+            <Image class="logo mb-4" src="~/assets/images/logo-1.png"></Image>
+            <Label class="usdt" text="USDT"></Label>
+            <Label class="snap mb-2" text="Price of SNAP"></Label>
+            <Label class="price mb-3" text="0.840"></Label>
+            <Label class="text-sm text-600 text-mute" text="As of 12 April 2020"></Label>
+        </StackLayout>
+    </FlexboxLayout>
+    <StackLayout flexShrink="0">
+        <app-nav></app-nav>
+    </StackLayout>
+</FlexboxLayout>
