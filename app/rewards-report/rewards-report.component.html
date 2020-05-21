@@ -1,1 +1,24 @@
-<Button text="rewards-report works!" class="btn btn-primary"></Button>
+<ActionBar title="DAILY REWARDS REPORT" color="#fff">
+    <NavigationButton class="fa" icon="font://&#xf104;"></NavigationButton>
+    <!-- <ActionItem
+        class="fa"
+        icon="font://&#xf104;"
+        ios.position="right"
+    ></ActionItem> -->
+</ActionBar>
+<FlexboxLayout class="page-wrap">
+    <FlexboxLayout
+        flexDirection="column"
+        flexGrow="1"
+        alignItems="center"
+        justifyContent="center"
+    >
+        <StackLayout class="no-data">
+            <Label class="fa" text="&#xf01c;"></Label>
+            <Label class="text-uppercase" text="No transaction"></Label>
+        </StackLayout>
+    </FlexboxLayout>
+    <StackLayout flexShrink="0">
+        <app-nav></app-nav>
+    </StackLayout>
+</FlexboxLayout>

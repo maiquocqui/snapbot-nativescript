@@ -156,34 +156,52 @@
                         text="Send Amount"
                     ></Label>
                     <StackLayout class="container">
-                        <FlexboxLayout class="exchange-box mb-2" width="100%">
-                            <FlexboxLayout class="exchange-field">
-                                <TextField
-                                    class="exchange-input"
-                                    hint=""
-                                    text="100.0"
-                                    flewGrow="1"
-                                ></TextField>
+                        <AbsoluteLayout>
+                            <FlexboxLayout
+                                class="exchange-box mb-2"
+                                width="100%"
+                                height="120"
+                                top="0"
+                                left="0"
+                            >
+                                <FlexboxLayout class="exchange-field">
+                                    <TextField
+                                        class="exchange-input"
+                                        hint=""
+                                        text="100.0"
+                                        flewGrow="1"
+                                    ></TextField>
+                                    <Label
+                                        class="exchange-label"
+                                        text="SNAP"
+                                        flexShrink="0"
+                                    ></Label>
+                                </FlexboxLayout>
+                                <FlexboxLayout class="exchange-field">
+                                    <TextField
+                                        class="exchange-input"
+                                        hint=""
+                                        text="2.1450"
+                                        flewGrow="1"
+                                    ></TextField>
+                                    <Label
+                                        class="exchange-label"
+                                        text="BTC"
+                                        flexShrink="0"
+                                    ></Label>
+                                </FlexboxLayout>
+                            </FlexboxLayout>
+                            <FlexboxLayout
+                                class="swap-wrap"
+                            >
                                 <Label
-                                    class="exchange-label"
-                                    text="SNAP"
-                                    flexShrink="0"
+                                    class="fa btn-swap"
+                                    text="&#xf0ec;"
+                                    top="0"
+                                    left="0"
                                 ></Label>
                             </FlexboxLayout>
-                            <FlexboxLayout class="exchange-field">
-                                <TextField
-                                    class="exchange-input"
-                                    hint=""
-                                    text="2.1450"
-                                    flewGrow="1"
-                                ></TextField>
-                                <Label
-                                    class="exchange-label"
-                                    text="BTC"
-                                    flexShrink="0"
-                                ></Label>
-                            </FlexboxLayout>
-                        </FlexboxLayout>
+                        </AbsoluteLayout>
                         <Label
                             class="text-sm text-mute"
                             text="Rate: 1 Snap = 0.00000739 BTC"
